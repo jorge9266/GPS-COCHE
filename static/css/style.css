@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  height: 70%;
+}
+
+div#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: lightblue;
+}
+div#menu #botones {
+  display: flex;
+  flex-direction: row;
+}
+div#menu #botones button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+div#menu #botones button#añadir:hover {
+  background-color: lightgreen;
+  color: white;
+}
+div#menu #botones button#eliminar:hover {
+  background-color: red;
+  color: white;
+}
+div#menu #botones button#historico:hover {
+  background-color: orange;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

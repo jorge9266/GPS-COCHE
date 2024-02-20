@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>GEOCAR</title>
+</head>
+    <body>
+        <div id="map"></div>
+        <div id="menu">
+            <h2>Información de Ubicación</h2>
+            <p id="ubicacion">Ubicación: </p>
+            <p id="distancia">Distancia al coche: </p>
+            <p id="tiempo">Fecha del Waypoint: </p>
+            <div id="botones">
+            <button id="añadir">Añadir Ubicación</button>
+            <button id="eliminar">Eliminar Marcador</button>
+            <button id="historico">Ver Histórico</button>
+        </div>
+        <dialog id="historicoDialog">
+            <h2>Histórico de Ubicaciones</h2>
+            <ul id="listaHistorico"></ul>
+            <button id="cerrarHistorico">Cerrar Histórico</button>
+        </dialog>
+
+        <dialog id="UbicacionDialog">
+            <h2>Ingrese el nombre de la ubicación</h2>
+            <input type="text" id="nombreUbicacionInput">
+            <br>
+            <button id="cancelar">Cancelar</button>
+            <button id="guardar">Guardar</button>
+        </dialog>
+
+        <script src="static/js/app.js"></script>
+    </body>
+    </html>
+</body>
+
+</html>
